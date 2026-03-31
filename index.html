@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus3D | Precision Engineering Studio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navbar -->
+      <nav class="glass" style="position: fixed; top: 0; width: 100%; z-index: 1000; padding: 1.5rem 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="/images/Focus3d_logo.png" alt="Focus3D" style="height: 40px; width: auto;">
+            <span class="title-font" style="font-weight: 700; font-size: 1.5rem; letter-spacing: 3px;">Focus3D</span>
+          </div>
+          <div class="nav-links title-font" style="display: flex; gap: 2rem; font-size: 0.85rem;">
+            <a href="#services">Services</a>
+            <a href="#portfolio">Sample Projects</a>
+            <a href="#tools">Digital Tools</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 80px; position: relative; overflow: hidden;">
+        <!-- Background Glows -->
+        <div style="position: absolute; top: 20%; left: 0%; width: 500px; height: 500px; background: radial-gradient(circle, var(--glow-pink) 0%, transparent 70%); z-index: -1; filter: blur(100px);"></div>
+        <div style="position: absolute; bottom: 10%; right: 0%; width: 600px; height: 600px; background: radial-gradient(circle, var(--glow-blue) 0%, transparent 70%); z-index: -1; filter: blur(100px);"></div>
+        
+        <div class="container" style="position: relative; z-index: 2; display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center;">
+          <div style="max-width: 700px;">
+            <h4 class="text-gradient reveal">Engineering the future of film</h4>
+            <h1 style="font-size: clamp(3rem, 8vw, 5.5rem); margin: 1rem 0; line-height: 1.1;" class="reveal">High-End <span style="font-weight: 300;">Precision</span> Engineering</h1>
+            <p style="font-size: 1.25rem; color: var(--text-dim); margin-bottom: 3rem;" class="reveal">Custom manufacturing solutions for the film and TV industry. From CAD design to 3D printing and CNC engraving—we build the tools that empower your storytelling.</p>
+            <div class="btn-group reveal" style="display: flex; gap: 1.5rem;">
+              <a href="#services" class="btn btn-primary">Our Services</a>
+              <a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank" class="btn btn-outline" style="border-radius: 4px; border: 1px solid var(--surface-border); padding: 1rem 2rem;">Etsy Store</a>
+            </div>
+          </div>
+          <div class="reveal" style="position: relative;">
+            <div class="glass" style="padding: 1rem; border-radius: 12px; transform: rotate(3deg);">
+              <img src="/images/hero_bracket_clean.png" alt="Custom Engineering" style="width: 100%; border-radius: 8px; box-shadow: 0 0 40px var(--glow-blue);">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Product: Codex Drive Case -->
+      <section id="codex-case" class="section-padding" style="position: relative;">
+        <!-- Background Accent -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; height: 80%; background: radial-gradient(circle, rgba(0, 242, 255, 0.05) 0%, transparent 70%); z-index: -1;"></div>
+        
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem; align-items: center;">
+          <div class="reveal">
+            <div class="product-gallery">
+              <div class="main-image glass" style="border-radius: 12px; overflow: hidden; height: clamp(300px, 50vh, 500px); display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                <img src="/images/codex_drives_protective_case/1.png" id="mainCaseImg" alt="Codex Drive Case" style="width: 100%; height: 100%; object-fit: contain; transition: opacity 0.3s ease;">
+              </div>
+              <div class="thumbnails" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 1.5rem;">
+                <img src="/images/codex_drives_protective_case/1.png" class="thumb active" onclick="window.updateMainImg(this.src, this)" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                <img src="/images/codex_drives_protective_case/2.png" class="thumb" onclick="window.updateMainImg(this.src, this)" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                <img src="/images/codex_drives_protective_case/3.png" class="thumb" onclick="window.updateMainImg(this.src, this)" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                <img src="/images/codex_drives_protective_case/4.png" class="thumb" onclick="window.updateMainImg(this.src, this)" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                <img src="/images/codex_drives_protective_case/5.png" class="thumb" onclick="window.updateMainImg(this.src, this)" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; cursor: pointer;">
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <h4 class="text-gradient title-font">Featured Product</h4>
+            <h2 style="font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;">Codex Drive Protective Case</h2>
+            <p style="font-size: 1.2rem; color: var(--text-dim); margin-bottom: 2rem;">Engineered for high-end digital cinema workflows. Our custom-fit protective cases provide a secure, professional solution for managing your ARRI Codex Compact Drives on set.</p>
+            
+            <ul style="margin-bottom: 3rem; color: var(--text-dim); list-style: none;">
+              <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-blue); font-size: 1.2rem;">✦</span> 6-Drive capacity per case</li>
+              <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-blue); font-size: 1.2rem;">✦</span> Precision fit for Codex Compact Drives</li>
+              <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-blue); font-size: 1.2rem;">✦</span> Multi-color latch identification (Red, Blue, Yellow)</li>
+              <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-blue); font-size: 1.2rem;">✦</span> Industrial-grade 3D-printed construction</li>
+            </ul>
+
+            <div style="display: flex; gap: 1.5rem;">
+              <a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank" class="btn btn-primary">Shop on Etsy</a>
+              <a href="#contact" class="btn btn-outline" style="border: 1px solid var(--surface-border); border-radius: 4px; padding: 1rem 2rem;">Project Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section-padding" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+          <div style="margin-bottom: 4rem;">
+            <h4 class="text-gradient title-font">What we do</h4>
+            <h2 style="font-size: 3rem;">Precision Services</h2>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden;">
+              <img src="/images/custom_evf_bracket_prototype.png" style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8; transition: var(--transition);" class="card-img">
+              <div style="padding: 2.5rem;">
+                <h3 style="margin-bottom: 1rem;">CAD Design & Prototyping</h3>
+                <p style="color: var(--text-dim);">Detailed technical design tailored to your specific filmmaking needs. We turn sketches into manufacturing-ready blueprints.</p>
+              </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden;">
+              <img src="/images/custom_aluminum_evf_bracket.png" style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8; transition: var(--transition);" class="card-img">
+              <div style="padding: 2.5rem;">
+                <h3 style="margin-bottom: 1rem;">CNC Machining</h3>
+                <p style="color: var(--text-dim);">High-precision aluminum milling and turning. We produce custom cinema-grade components with extreme durability and fine tolerances.</p>
+              </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden;">
+              <img src="/images/Astera_tube_clip_holder_1.png" style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8;" class="card-img">
+              <div style="padding: 2.5rem;">
+                <h3 style="margin-bottom: 1rem;">3D Printing</h3>
+                <p style="color: var(--text-dim);">Rapid manufacturing of precision parts and specialized brackets using specialized materials for production environments.</p>
+              </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden;">
+              <img src="/images/cnc_engraved_lens_cards_multi_colours.png" style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8;" class="card-img">
+              <div style="padding: 2.5rem;">
+                <h3 style="margin-bottom: 1rem;">CNC Engraving</h3>
+                <p style="color: var(--text-dim);">Professional CNC metal engraving for custom equipment labels, nameplates, and intricate component identification.</p>
+              </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden;">
+              <img src="/images/Engraved_name_plates_for_cases_(1)/2.png" style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8;" class="card-img">
+              <div style="padding: 2.5rem;">
+                <h3 style="margin-bottom: 1rem;">Custom Nameplates</h3>
+                <p style="color: var(--text-dim);">Bespoke high-end nameplates and branding assets for professional camera kits and grip gear.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sample Projects Portfolio -->
+      <section id="portfolio" class="section-padding" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+          <div style="margin-bottom: 5rem; text-align: center;">
+            <h4 class="text-gradient title-font">The Portfolio</h4>
+            <h2 style="font-size: 3.5rem;">Sample Projects</h2>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div class="glass reveal" style="padding: 0; border-radius: 8px; overflow: hidden; position: relative; height: 350px;">
+              <img src="/images/custom_pl_port_cap_1.png" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h4 class="title-font">Custom PL Port Caps</h4>
+              </div>
+            </div>
+            <div class="glass reveal" style="padding: 0; border-radius: 8px; overflow: hidden; position: relative; height: 350px;">
+              <img src="/images/monitor_cage_for_light_ranger_and_teradek.png" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h4 class="title-font">Monitor Cages</h4>
+              </div>
+            </div>
+            <div class="glass reveal" style="padding: 0; border-radius: 8px; overflow: hidden; position: relative; height: 350px;">
+              <img src="/images/MDR_4_SIDE_BRACKET/2.png" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h4 class="title-font">MDR4 Side Brackets (3D Printed)</h4>
+              </div>
+            </div>
+            <div class="glass reveal" style="padding: 0; border-radius: 8px; overflow: hidden; position: relative; height: 350px;">
+              <img src="/images/flexible_protective_cases.png" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h4 class="title-font">Flexible Protection</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Digital Tools (CRANK & PowerVibe) -->
+      <section id="tools" class="section-padding">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 5rem;">
+            <h4 class="text-gradient title-font">The Digital Ecosystem</h4>
+            <h2 style="font-size: 3.5rem;">Film-Focus Tools</h2>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+            <!-- CRANK -->
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+              <div style="height: 250px; position: relative;">
+                <img src="/images/crank_app_screenshot.png" alt="CRANK Digital Tool" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(transparent, rgba(10,10,10,0.9)); pointer-events: none;"></div>
+                <div style="position: absolute; bottom: 20px; left: 20px;" class="btn btn-primary">CRANK v2</div>
+              </div>
+              <div style="padding: 3rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">CRANK</h3>
+                <p style="color: var(--text-dim); margin-bottom: 2rem;">An off-speed and exposure calculator.</p>
+                <a href="https://filmandfocusco.github.io/Crank/" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">Launch CRANK</a>
+              </div>
+            </div>
+            
+            <!-- PowerVibe -->
+            <div class="glass reveal" style="padding: 0; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+              <div style="height: 250px; position: relative;">
+                 <img src="/images/powervibe_app_screenshot.png" alt="PowerVibe Calculator" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                 <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(transparent, rgba(10,10,10,0.9)); pointer-events: none;"></div>
+                 <div style="position: absolute; bottom: 20px; left: 20px; color: var(--accent-blue); border: 1px solid var(--accent-blue); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.75rem; text-transform: uppercase; background: rgba(0,0,0,0.5);">Calculator</div>
+              </div>
+              <div style="padding: 3rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">PowerVibe</h3>
+                <p style="color: var(--text-dim); margin-bottom: 2rem;">A camera accessories planner and battery runtime calculator.</p>
+                <a href="https://power-vibe.vercel.app/" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">Launch PowerVibe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Showcase -->
+      <section style="padding: 4rem 0; border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 4rem; opacity: 0.5;">
+          <h3 class="title-font" style="font-size: 1.5rem;">ARRI RENTAL</h3>
+          <h3 class="title-font" style="font-size: 1.5rem;">CLEAN CAMERA</h3>
+          <h3 class="title-font" style="font-size: 1.5rem;">SEA STAR</h3>
+          <h3 class="title-font" style="font-size: 1.5rem;">PANAVISION</h3>
+        </div>
+      </section>
+
+      <!-- Footer / Contact -->
+      <footer id="contact" class="section-padding">
+        <div class="container">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h2 style="font-size: 4rem; margin-bottom: 1rem;">Ready to build?</h2>
+            <p style="font-size: 1.5rem; color: var(--text-dim); margin-bottom: 4rem;">Get in touch for custom engineering projects, CNC engraving, and prototyping.</p>
+            <a href="mailto:hello@focus3d.xyz" class="btn btn-primary" style="padding: 1.5rem 4rem; font-size: 1.25rem;">hello@focus3d.xyz</a>
+            
+            <div style="margin-top: 6rem; display: flex; gap: 3rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;" class="title-font">
+               <a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank" style="color: var(--accent-pink);">Etsy Shop</a>
+               <a href="https://www.instagram.com/filmandfocusco" target="_blank">Instagram</a>
+               <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
