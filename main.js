@@ -9,36 +9,62 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
-      // For more complex animations, we could trigger per-element delays here
-      if (entry.target.classList.contains('active')) {
-        // Optional: stop observing once revealed
-        // observer.unobserve(entry.target);
-      }
     }
   });
 }, observerOptions);
 
-// Initialize animations
+// Initialize animations and DOM event listeners
 document.addEventListener('DOMContentLoaded', () => {
+  // Setup reveal elements
   const reveals = document.querySelectorAll('.reveal');
-  reveals.forEach((el, index) => {
-    // Add staggered delay to elements if needed
-    // const delay = (index % 4) * 0.1;
-    // el.style.transitionDelay = `${delay}s`;
+  reveals.forEach((el) => {
     observer.observe(el);
   });
 
   // Staggering within groups
-  const groupsToStagger = ['.hero .reveal', '.services-grid .reveal'];
+  const groupsToStagger = ['.hero .reveal', '.services-grid .reveal', '.portfolio-grid .reveal', '.tools-grid .reveal'];
   groupsToStagger.forEach(selector => {
     const group = document.querySelectorAll(selector);
     group.forEach((el, index) => {
         el.style.transitionDelay = `${index * 0.1}s`;
     });
   });
+
+  // Mobile Hamburger Drawer Logic
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const drawer = document.querySelector('.mobile-menu-drawer');
+  const overlay = document.querySelector('.drawer-overlay');
+  const drawerLinks = document.querySelectorAll('.mobile-menu-drawer a');
+
+  function toggleMenu() {
+    drawer.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+
+  function closeMenu() {
+    drawer.classList.remove('active');
+    overlay.classList.remove('active');
+  }
+
+  if (hamburgerBtn && drawer && overlay) {
+    hamburgerBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
+
+  // Wishlist Heart Toggle Logic
+  const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+  wishlistButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      btn.classList.toggle('active');
+    });
+  });
 });
 
-// Image Gallery Logic
+// Image Gallery Logic (Codex Drive Case)
 window.updateMainImg = function(src, el) {
   const mainImg = document.getElementById('mainCaseImg');
   const thumbs = document.querySelectorAll('.thumb');
@@ -61,4 +87,4 @@ window.updateMainImg = function(src, el) {
   }, 300);
 };
 
-console.log('Focus3D Studio loaded successfully.');
+console.log('Focus3D Studio loaded successfully with Cinema Hardware styling.');

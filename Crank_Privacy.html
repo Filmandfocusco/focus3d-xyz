@@ -10,87 +10,140 @@
   <body>
     <div id="app">
       <!-- Navbar -->
-      <nav class="glass" style="position: fixed; top: 0; width: 100%; z-index: 1000; padding: 1.5rem 0;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-          <div class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
-            <a href="/" style="display: flex; align-items: center; gap: 0.75rem;">
-              <img src="/images/Focus3d_logo.png" alt="Focus3D" style="height: 40px; width: auto;">
-              <span class="title-font" style="font-weight: 700; font-size: 1.5rem; letter-spacing: 3px;">Focus3D</span>
+      <nav class="site-header">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img src="/images/Focus3d_logo.png" alt="Focus3D" class="logo-img">
             </a>
           </div>
-          <div class="nav-links title-font" style="display: flex; gap: 2rem; font-size: 0.85rem;">
+          <div class="desktop-nav">
             <a href="/#services">Services</a>
             <a href="/#portfolio">Sample Projects</a>
             <a href="/#tools">Digital Tools</a>
             <a href="/#contact">Contact</a>
           </div>
+          <button class="hamburger-btn" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
         </div>
       </nav>
+
+      <!-- Slide-out Mobile Menu Drawer -->
+      <div class="mobile-menu-drawer">
+        <a href="/#services" class="mobile-nav-link">Services</a>
+        <a href="/#portfolio" class="mobile-nav-link">Sample Projects</a>
+        <a href="/#tools" class="mobile-nav-link">Digital Tools</a>
+        <a href="/#contact" class="mobile-nav-link">Contact</a>
+        <div class="drawer-footer">
+          <p>© 2026 Focus3D Studio</p>
+        </div>
+      </div>
+      <div class="drawer-overlay"></div>
 
       <!-- Privacy Content Section -->
       <section class="section-padding" style="min-height: 100vh; padding-top: 150px;">
         <div class="container" style="max-width: 800px;">
-          <h4 class="text-gradient reveal active">Legal</h4>
-          <h1 style="font-size: clamp(2.5rem, 6vw, 3.5rem); margin: 1rem 0; line-height: 1.1;" class="reveal active">Privacy Policy</h1>
-          <p style="color: var(--text-dim); margin-bottom: 4rem;" class="reveal active">Last Updated: April 10, 2026</p>
+          <h4>Legal</h4>
+          <h1 style="font-size: clamp(2rem, 5.5vw, 3rem); margin: 1rem 0; line-height: 1.2;" class="reveal active">Privacy Policy</h1>
+          <p style="color: var(--text-dim); margin-bottom: 3rem;" class="reveal active">Last Updated: April 10, 2026</p>
 
-          <div class="glass reveal active" style="padding: 3rem; border-radius: 12px; line-height: 1.8;">
-            <div style="margin-bottom: 3rem;">
-              <h3 style="color: var(--text-main); margin-bottom: 1rem;">1. Introduction</h3>
-              <p style="color: var(--text-dim);">Focus3D (referred to as "we", "us", or "our") respects your privacy. This Privacy Policy explains how we handle information in relation to the <strong>Crank</strong> mobile application.</p>
+          <div class="reveal active" style="background-color: var(--bg-dark); border: 1px solid var(--surface-border); padding: 2.5rem; border-radius: 4px; line-height: 1.8;">
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 1.1rem; font-weight: 500; letter-spacing: 1px;">1. Introduction</h3>
+              <p style="color: var(--text-dim); font-size: 0.95rem;">Focus3D (referred to as "we", "us", or "our") respects your privacy. This Privacy Policy explains how we handle information in relation to the <strong>Crank</strong> mobile application.</p>
             </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h3 style="color: var(--text-main); margin-bottom: 1rem;">2. Data Collection</h3>
-              <p style="color: var(--text-dim);">Crank is designed as a professional utility tool for camera departments. We believe in absolute privacy:</p>
-              <ul style="margin: 1.5rem 0; list-style: disc; padding-left: 1.5rem; color: var(--text-dim);">
-                <li><strong>No Personal Data:</strong> We do not collect, store, or transmit any personally identifiable information (PII).</li>
-                <li><strong>No Account Tracking:</strong> There are no user accounts, and we do not track your identity across other apps or websites.</li>
-                <li><strong>No Third-Party Analytics:</strong> We do not use third-party tracking or analytics services that harvest your data.</li>
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 1.1rem; font-weight: 500; letter-spacing: 1px;">2. Data Collection</h3>
+              <p style="color: var(--text-dim); font-size: 0.95rem;">Crank is designed as a professional utility tool for camera departments. We believe in absolute privacy:</p>
+              <ul style="margin: 1rem 0; list-style: disc; padding-left: 1.5rem; color: var(--text-dim); font-size: 0.95rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>No Personal Data:</strong> We do not collect, store, or transmit any personally identifiable information (PII).</li>
+                <li style="margin-bottom: 0.5rem;"><strong>No Account Tracking:</strong> There are no user accounts, and we do not track your identity across other apps or websites.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>No Third-Party Analytics:</strong> We do not use third-party tracking or analytics services that harvest your data.</li>
               </ul>
             </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h3 style="color: var(--text-main); margin-bottom: 1rem;">3. Device Permissions</h3>
-              <p style="color: var(--text-dim);">Crank may request access to certain device features to provide its core functionality (e.g., Camera access for exposure calculations or augmented reality features). These permissions are used exclusively within the app session on your device. No images or sensor data are ever uploaded to our servers or shared with third parties.</p>
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 1.1rem; font-weight: 500; letter-spacing: 1px;">3. Device Permissions</h3>
+              <p style="color: var(--text-dim); font-size: 0.95rem;">Crank may request access to certain device features to provide its core functionality (e.g., Camera access for exposure calculations or augmented reality features). These permissions are used exclusively within the app session on your device. No images or sensor data are ever uploaded to our servers or shared with third parties.</p>
             </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h3 style="color: var(--text-main); margin-bottom: 1rem;">4. Data Security</h3>
-              <p style="color: var(--text-dim);">Since no personal data is collected or transmitted, there is no personal data risk associated with using Crank.</p>
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 1.1rem; font-weight: 500; letter-spacing: 1px;">4. Data Security</h3>
+              <p style="color: var(--text-dim); font-size: 0.95rem;">Since no personal data is collected or transmitted, there is no personal data risk associated with using Crank.</p>
             </div>
 
-            <div style="margin-bottom: 3rem;">
-              <h3 style="color: var(--text-main); margin-bottom: 1rem;">5. Changes to This Policy</h3>
-              <p style="color: var(--text-dim);">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 1.1rem; font-weight: 500; letter-spacing: 1px;">5. Changes to This Policy</h3>
+              <p style="color: var(--text-dim); font-size: 0.95rem;">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
             </div>
 
             <div style="margin-bottom: 0;">
-              <h3 style="color: var(--text-main); margin-bottom: 1rem;">6. Contact Us</h3>
-              <p style="color: var(--text-dim);">If you have any questions about this Privacy Policy, please contact us at:</p>
+              <h3 style="color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 1.1rem; font-weight: 500; letter-spacing: 1px;">6. Contact Us</h3>
+              <p style="color: var(--text-dim); font-size: 0.95rem;">If you have any questions about this Privacy Policy, please contact us at:</p>
               <p style="margin-top: 1rem;"><a href="mailto:hello.focus3d@gmail.com" style="color: var(--accent-blue); font-weight: 600;">hello.focus3d@gmail.com</a></p>
             </div>
           </div>
 
-          <div style="margin-top: 4rem; text-align: center;">
+          <div style="margin-top: 3rem; text-align: center;">
             <a href="/" class="btn btn-outline">Back to Home</a>
           </div>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer id="contact" class="section-padding" style="background: rgba(0,0,0,0.3);">
+      <!-- High Contrast Yellow-Gold Footer -->
+      <footer id="contact" class="yellow-footer">
         <div class="container">
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="margin-bottom: 2rem;">
-              <img src="/images/Focus3d_logo.png" alt="Focus3D" style="height: 30px; opacity: 0.5;">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <p>Focus3D Studio</p>
+              <p>+49 176 84492128 (Germany)</p>
+              <p><a href="mailto:hello.focus3d@gmail.com">hello.focus3d@gmail.com</a></p>
+              <p>Mon-Fri 9AM-5PM CET</p>
             </div>
-            <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 3rem;">&copy; 2026 Focus3D. All rights reserved.</p>
             
-            <div style="display: flex; gap: 3rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;" class="title-font">
-               <a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank">Etsy Shop</a>
-               <a href="https://www.instagram.com/filmandfocusco" target="_blank">Instagram</a>
-               <a href="/Crank_Privacy.html" style="color: var(--accent-pink);">Privacy Policy</a>
+            <!-- Column 2: Support / Links -->
+            <div class="footer-col">
+              <h3>Support</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank">Etsy Shop</a></li>
+                <li><a href="https://www.instagram.com/filmandfocusco" target="_blank">Instagram</a></li>
+                <li><a href="/Crank_Privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Support Contact</a></li>
+              </ul>
+            </div>
+
+          </div>
+          
+          <div class="footer-bottom">
+            <!-- Focus3D Logo -->
+            <img src="/images/Focus3d_logo.png" alt="Focus3D" class="footer-logo">
+            
+            <div class="social-links">
+              <a href="https://www.instagram.com/filmandfocusco" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank" aria-label="Etsy Shop">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="copyright">
+              © 2026 Copyright Focus3D Studio
             </div>
           </div>
         </div>
