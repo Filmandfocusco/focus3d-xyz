@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing | Focus3D Precision Engineering Studio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navbar -->
+      <nav class="site-header">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img src="/images/Focus3d_logo.png" alt="Focus3D" class="logo-img">
+            </a>
+          </div>
+          <div class="desktop-nav">
+            <a href="/#services">Services</a>
+            <a href="/#portfolio">Sample Projects</a>
+            <a href="/#tools">Digital Tools</a>
+            <a href="/pricing.html" class="active">Pricing</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="hamburger-btn" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Slide-out Mobile Menu Drawer -->
+      <div class="mobile-menu-drawer">
+        <a href="/#services" class="mobile-nav-link">Services</a>
+        <a href="/#portfolio" class="mobile-nav-link">Sample Projects</a>
+        <a href="/#tools" class="mobile-nav-link">Digital Tools</a>
+        <a href="/pricing.html" class="mobile-nav-link active">Pricing</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="drawer-footer">
+          <p>© 2026 Focus3D Studio</p>
+        </div>
+      </div>
+      <div class="drawer-overlay"></div>
+
+      <!-- Pricing Hero Section -->
+      <section class="hero" style="min-height: 40vh; display: flex; align-items: center; padding-top: 150px; padding-bottom: 60px; position: relative; overflow: hidden; background-color: var(--bg-dark); border-bottom: 1px solid var(--surface-border);">
+        <div class="container" style="text-align: center;">
+          <h4 class="reveal">Focus3D Studio</h4>
+          <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin: 1rem 0; line-height: 1.2; text-transform: uppercase;" class="reveal">Services Pricing</h1>
+          <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto; line-height: 1.6;" class="reveal">Transparent, competitive pricing for our precision design, machining, and engineering services.</p>
+        </div>
+      </section>
+
+      <!-- Pricing Cards Section -->
+      <section class="section-padding" style="background-color: var(--bg-main);">
+        <div class="container">
+          <div class="pricing-grid">
+            
+            <!-- Card 1: CAD Design -->
+            <div class="pricing-card reveal">
+              <div class="pricing-card-header">
+                <h3>CAD Design & Prototyping</h3>
+                <div class="price-container">
+                  <span class="price-amount">£40</span>
+                  <span class="price-unit">/ hour</span>
+                </div>
+              </div>
+              <div class="pricing-card-body">
+                <p>Detailed technical design engineered to your specific filmmaking workflow. We translate your concepts into manufacturing-ready blueprints.</p>
+                <ul class="pricing-features-list">
+                  <li>Technical CAD Drawings</li>
+                  <li>3D Assembly Modeling</li>
+                  <li>Material & Fit Verification</li>
+                  <li>DFM Optimization</li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <a href="mailto:hello.focus3d@gmail.com?subject=Inquiry: CAD Design & Prototyping" class="btn btn-primary">Request Quote</a>
+              </div>
+            </div>
+
+            <!-- Card 2: CNC Machining -->
+            <div class="pricing-card reveal">
+              <div class="pricing-card-header">
+                <h3>CNC Machining</h3>
+                <div class="price-container">
+                  <span class="price-amount">£15</span>
+                  <span class="price-unit">/ hour + materials</span>
+                </div>
+              </div>
+              <div class="pricing-card-body">
+                <p>High-precision aluminum milling and turning. We produce custom, cinema-grade hardware components with tight tolerances.</p>
+                <ul class="pricing-features-list">
+                  <li>3-Axis & 4-Axis Milling</li>
+                  <li>Aluminum & Stainless Steel</li>
+                  <li>Machine Running Time Rate</li>
+                  <li>Post-Processing & Finishing</li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <a href="mailto:hello.focus3d@gmail.com?subject=Inquiry: CNC Machining" class="btn btn-primary">Request Quote</a>
+              </div>
+            </div>
+
+            <!-- Card 3: 3D Printing -->
+            <div class="pricing-card reveal">
+              <div class="pricing-card-header">
+                <h3>3D Printing</h3>
+                <div class="price-container">
+                  <span class="price-amount">£10</span>
+                  <span class="price-unit">/ hour + materials</span>
+                </div>
+              </div>
+              <div class="pricing-card-body">
+                <p>Rapid physical prototyping and custom casing fabrication using industrial-grade filaments and high-fidelity resins.</p>
+                <ul class="pricing-features-list">
+                  <li>FDM & SLA Printing</li>
+                  <li>Technical Polymers (PETG, ASA)</li>
+                  <li>Rapid Form Verification</li>
+                  <li>Custom Enclosures & Shells</li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <a href="mailto:hello.focus3d@gmail.com?subject=Inquiry: 3D Printing" class="btn btn-primary">Request Quote</a>
+              </div>
+            </div>
+
+            <!-- Card 4: CNC Engraving -->
+            <div class="pricing-card reveal">
+              <div class="pricing-card-header">
+                <h3>CNC Engraving</h3>
+                <div class="price-container">
+                  <span class="price-amount">£15</span>
+                  <span class="price-unit">/ hour + materials</span>
+                </div>
+              </div>
+              <div class="pricing-card-body">
+                <p>Permanent precision markings on metallic surfaces. Perfect for labels, dials, markers, and tactical panel indexing.</p>
+                <ul class="pricing-features-list">
+                  <li>Anodized Aluminum Marking</li>
+                  <li>Tactile Index Markings</li>
+                  <li>Control Panel Graphics</li>
+                  <li>High-Contrast Finishes</li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <a href="mailto:hello.focus3d@gmail.com?subject=Inquiry: CNC Engraving" class="btn btn-primary">Request Quote</a>
+              </div>
+            </div>
+
+            <!-- Card 5: Custom Nameplates -->
+            <div class="pricing-card reveal">
+              <div class="pricing-card-header">
+                <h3>Custom Nameplates</h3>
+                <div class="price-container">
+                  <span class="price-amount">£15</span>
+                  <span class="price-unit">/ hour + materials</span>
+                </div>
+              </div>
+              <div class="pricing-card-body">
+                <p>Bespoke metallic tags, DIT cart markers, and equipment labels personalized with your name, studio, or serial indexes.</p>
+                <ul class="pricing-features-list">
+                  <li>Equipment Branding</li>
+                  <li>DIT Cart Markings</li>
+                  <li>Anodized & Colored Metals</li>
+                  <li>Weatherproof & Set-Ready</li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <a href="mailto:hello.focus3d@gmail.com?subject=Inquiry: Custom Nameplates" class="btn btn-primary">Request Quote</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- High Contrast Yellow-Gold Footer -->
+      <footer id="contact" class="yellow-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <p>Focus3D Studio</p>
+              <p>+49 176 84492128 (Germany)</p>
+              <p><a href="mailto:hello.focus3d@gmail.com">hello.focus3d@gmail.com</a></p>
+              <p>Mon-Fri 9AM-5PM CET</p>
+            </div>
+            
+            <!-- Column 2: Support / Links -->
+            <div class="footer-col">
+              <h3>Support</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank">Etsy Shop</a></li>
+                <li><a href="https://www.instagram.com/filmandfocusco" target="_blank">Instagram</a></li>
+                <li><a href="/Crank_Privacy.html">Privacy Policy</a></li>
+                <li><a href="/pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <!-- Focus3D Logo -->
+            <img src="/images/Focus3d_logo.png" alt="Focus3D" class="footer-logo">
+            
+            <div class="social-links">
+              <a href="https://www.instagram.com/filmandfocusco" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://www.etsy.com/shop/FilmandFocusCo" target="_blank" aria-label="Etsy Shop">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="copyright">
+              © 2026 Copyright Focus3D Studio
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

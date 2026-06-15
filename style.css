@@ -562,6 +562,102 @@ nav.site-header {
   background: var(--accent-gold);
 }
 
+/* Pricing Page Custom Styles */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricing-card {
+  background: var(--bg-dark);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.pricing-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.pricing-card-header {
+  border-bottom: 1px solid var(--surface-border);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card-header h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.price-unit {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.pricing-card-body {
+  flex-grow: 1;
+}
+
+.pricing-card-body p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.pricing-features-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pricing-features-list li {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pricing-features-list li::before {
+  content: "✦";
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+}
+
+.pricing-card-footer {
+  margin-top: auto;
+}
+
+.pricing-card-footer .btn {
+  width: 100%;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
   .footer-grid {
@@ -569,6 +665,10 @@ nav.site-header {
   }
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
@@ -603,6 +703,10 @@ nav.site-header {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

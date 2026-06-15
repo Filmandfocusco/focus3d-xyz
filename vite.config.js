@@ -6,6 +6,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         crank_privacy: 'Crank_Privacy.html',
+        pricing: 'pricing.html',
       },
     },
   },
