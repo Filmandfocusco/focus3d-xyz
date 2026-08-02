@@ -7,6 +7,7 @@ export default defineConfig({
         main: 'index.html',
         crank_privacy: 'Crank_Privacy.html',
         pricing: 'pricing.html',
+        industrial: 'industrial.html',
       },
     },
   },
