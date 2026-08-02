@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/Focus3d_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus3D | Precision Engineering Studio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navbar -->
+      <nav class="site-header">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#" class="logo-link">
+              <img src="/images/Focus3d_logo.png" alt="Focus3D" class="logo-img">
+            </a>
+          </div>
+          <div class="desktop-nav">
+            <a href="#services">Services</a>
+            <a href="#portfolio">Sample Projects</a>
+            <a href="/pricing.html">Pricing</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="hamburger-btn" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Slide-out Mobile Menu Drawer -->
+      <div class="mobile-menu-drawer">
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#portfolio" class="mobile-nav-link">Sample Projects</a>
+        <a href="/pricing.html" class="mobile-nav-link">Pricing</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="drawer-footer">
+          <p>© 2026 Focus3D Studio</p>
+        </div>
+      </div>
+      <div class="drawer-overlay"></div>
+
+      <!-- Hero Section -->
+      <section class="hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 80px; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 100%;">
+          <div style="max-width: 900px; width: 100%;">
+            <h5 class="reveal" style="font-size: 1.1rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 4px; font-weight: 700; margin-bottom: 0.5rem; font-family: var(--font-family);">Focus3D</h5>
+            <h4 class="reveal" style="color: var(--text-dim); font-size: 0.95rem; margin-top: 0; margin-bottom: 1.5rem; letter-spacing: 2px;">Precision Engineering & Manufacturing</h4>
+            <h1 style="font-size: clamp(2rem, 5.5vw, 3.8rem); margin: 1.5rem 0; line-height: 1.2;" class="reveal">From napkin sketch to <span style="font-weight: 300; color: var(--accent-gold);">physical part.</span></h1>
+            <p style="font-size: 1.15rem; color: var(--text-dim); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;" class="reveal">We specialize in CAD design, reverse engineering, and custom manufacturing for local businesses. Whether you need a small-batch CNC run or a rapid 3D printed prototype, we have the tools to build it.</p>
+            <div class="btn-group reveal" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+              <a href="#services" class="btn btn-primary">Our Services</a>
+              <a href="#contact" class="btn btn-outline">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Product: Custom Nameplates -->
+      <section id="featured-service" class="section-padding" style="position: relative; background-color: var(--bg-dark); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: center;">
+          <div class="reveal">
+            <div class="product-gallery">
+              <div class="main-image" style="border-radius: 4px; overflow: hidden; height: clamp(280px, 45vh, 450px); display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                <img src="/images/engraved_lens_cards.jpg" id="mainCaseImg" alt="Industrial Nameplates" style="width: 100%; height: 100%; object-fit: contain; transition: opacity 0.3s ease;">
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <h4>Featured Service</h4>
+            <h2 style="font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 1.25rem; line-height: 1.2; text-transform: uppercase;">Custom Industrial Nameplates</h2>
+            <p style="font-size: 1.05rem; color: var(--text-dim); margin-bottom: 2rem;">High-contrast, precision-machined nameplates and control panels for industrial machinery, electrical boxes, and custom automotive builds. Manufactured from durable acrylics, delrin, or aluminum to withstand harsh environments.</p>
+            
+            <ul style="margin-bottom: 2.5rem; color: var(--text-dim); list-style: none;">
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-gold); font-size: 1rem;">✦</span> High-contrast, legible engraving</li>
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-gold); font-size: 1rem;">✦</span> Weather & chemical resistant materials</li>
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-gold); font-size: 1rem;">✦</span> Cut to any custom dimension</li>
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--accent-gold); font-size: 1rem;">✦</span> Fast turnaround for local businesses</li>
+            </ul>
+
+            <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+              <a href="#contact" class="btn btn-primary">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section-padding">
+        <div class="container">
+          <div style="margin-bottom: 3.5rem;">
+            <h4>What we do</h4>
+            <h2>Precision Services</h2>
+          </div>
+          
+          <div class="services-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/MDR_4_SIDE_BRACKET/2.png" alt="CAD Design & Prototyping" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>CAD Design & Prototyping</h3>
+                  <button class="wishlist-btn" aria-label="Save service">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Detailed technical design tailored to your specific project needs. We turn sketches and ideas into manufacturing-ready blueprints.</p>
+              </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="service-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/custom_aluminum_evf_bracket.png" alt="CNC Machining" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>CNC Machining</h3>
+                  <button class="wishlist-btn" aria-label="Save service">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">High-precision aluminum milling and turning. We produce custom components with extreme durability and fine tolerances for any industry.</p>
+              </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="service-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/Astera_tube_clip_holder_1.png" alt="3D Printing" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>3D Printing</h3>
+                  <button class="wishlist-btn" aria-label="Save service">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Rapid manufacturing of precision parts and specialized brackets using specialized materials for production environments.</p>
+              </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/cnc_engraved_lens_cards_multi_colours.png" alt="CNC Engraving" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>CNC Engraving</h3>
+                  <button class="wishlist-btn" aria-label="Save service">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Professional CNC metal engraving for custom equipment labels, nameplates, and intricate component identification.</p>
+              </div>
+            </div>
+            <!-- Service Card 5 -->
+            <div class="service-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/Engraved_name_plates_for_cases_(1)/2.png" alt="Custom Nameplates" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Custom Nameplates</h3>
+                  <button class="wishlist-btn" aria-label="Save service">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Bespoke high-end nameplates and branding assets for professional camera kits and grip gear.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sample Projects Portfolio -->
+      <section id="portfolio" class="section-padding" style="background-color: var(--bg-dark); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
+        <div class="container">
+          <div style="margin-bottom: 4rem; text-align: center;">
+            <h4>The Catalog</h4>
+            <h2>Sample Projects</h2>
+          </div>
+
+          <div class="portfolio-grid">
+            <!-- Project Card 1 -->
+            <div class="product-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/custom_pl_port_cap_1.png" alt="Custom PL Port Caps" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Custom Port Caps</h3>
+                  <button class="wishlist-btn" aria-label="Save project">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Rapid prototyping and small-batch production using industrial-grade polymers for rigid and flexible structural components.</p>
+              </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="product-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/monitor_cage_for_light_ranger_and_teradek.png" alt="Equipment Cages" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Equipment Cages</h3>
+                  <button class="wishlist-btn" aria-label="Save project">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Integrated mounting cages for sensitive electronic receivers.</p>
+              </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="product-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/MDR_4_SIDE_BRACKET/2.png" alt="Structural Brackets" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Structural Brackets</h3>
+                  <button class="wishlist-btn" aria-label="Save project">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Lightweight custom chassis brackets for industrial motor drivers.</p>
+              </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="product-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/flexible_protective_cases.png" alt="Flexible Protection" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Flexible Protection</h3>
+                  <button class="wishlist-btn" aria-label="Save project">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Durable TPU bumper sleeves for wireless communication devices.</p>
+              </div>
+            </div>
+            <!-- Project Card 5 -->
+            <div class="product-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/engraved_lens_cards.jpg" alt="Engraved Lens Cards" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Engraved Lens Cards</h3>
+                  <button class="wishlist-btn" aria-label="Save project">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">High-contrast matte engraving on custom-cut plexiglass panels.</p>
+              </div>
+            </div>
+            <!-- Project Card 6 -->
+            <div class="product-card reveal">
+              <div class="card-img-wrapper">
+                <img src="/images/arri_sxu_replacement_handle_nobg.png" alt="Industrial Control Handle" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="card-title-row">
+                  <h3>Industrial Control Handle</h3>
+                  <button class="wishlist-btn" aria-label="Save project">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </button>
+                </div>
+                <p class="card-description">Custom lightweight 3D-printed replacement handles for specialized control units.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- B2B Call to Action -->
+      <section style="background-color: var(--bg-dark); padding: 6rem 0; text-align: center; border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
+        <div class="container">
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">Ready to bring your idea to life?</h2>
+          <p style="font-size: 1.15rem; color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem;">Whether you need a single prototype or a batch of custom manufactured parts, we are ready to help. Send us an email with your sketch or requirements.</p>
+          <a href="mailto:hello.focus3d@gmail.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Request a Free Quote</a>
+        </div>
+      </section>
+      <!-- High Contrast Yellow-Gold Footer -->
+      <footer id="contact" class="yellow-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <p>Focus3D Studio</p>
+              <p>Hemel Hempstead, UK</p>
+              <p><a href="mailto:hello.focus3d@gmail.com">hello.focus3d@gmail.com</a></p>
+              <p>Mon-Fri 9AM-5PM GMT/BST</p>
+            </div>
+            
+            <!-- Column 2: Support / Links -->
+            <div class="footer-col">
+              <h3>Support</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><a href="https://www.instagram.com/filmandfocusco" target="_blank">Instagram</a></li>
+                <li><a href="/Crank_Privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+          </div>
+          
+          <div class="footer-bottom">
+            <!-- Focus3D Logo -->
+            <img src="/images/Focus3d_logo.png" alt="Focus3D" class="footer-logo">
+            
+            <div class="social-links">
+              <a href="https://www.instagram.com/filmandfocusco" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="copyright">
+              © 2026 Copyright Focus3D Studio
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
